@@ -78,6 +78,16 @@ body {
   color: var(--accent-color);
 }
 
+.container.footer {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer {
+  background-color: #2f303a;
+}
+
 /* site - nav */
 
 .site-nav {
@@ -90,8 +100,8 @@ body {
 
 .site-nav .link {
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -256,6 +266,38 @@ body {
   letter-spacing: 0.03em;
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+ 
+}
+
+.menu-item{
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-left: 8px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+.projects-list {
+  width: calc(100%-60px)/3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  }
+
+.projects-list:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.projects-list:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+} 
+
 .button:hover,
 .button:focus {
   background-color: var(--accent-color);
@@ -274,10 +316,6 @@ body {
   border-radius: 4px;
   margin-top: 40px;
   padding: 10px 32px;
-}
-
-.footer {
-  background-color: #2f303a;
 }
 
 .address-nav,
